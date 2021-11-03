@@ -19,7 +19,7 @@ function App() {
   }
 
   async function handleSearch(e) {
-    if(id>6) return;
+    if (id > 6) return;
     const data = await getProperties("", id);
     if (data !== "Not Found") return setValue(data.value);
     const dato = await getProperties("_alternative", id);
